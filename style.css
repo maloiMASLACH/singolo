@@ -597,14 +597,21 @@ footer div{
     line-height: 22px;
     padding-left: 42px;
     padding-right: 702px;
-    color:#53596f;
+    color: #53596f;
+    background-color:#2d303a;
 }
+
 footer li{
     list-style-type: none; 
     display: inline-block;
     padding-right: 4px;
     margin-top: 3px;
-}.cont_inf a:link{
+}
+footer li:hover{
+    background-color: #1d2535;
+}
+
+.cont_inf a:link{
     text-decoration: none;
     color:#f0d8d9 ;
 }
