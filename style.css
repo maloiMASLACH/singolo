@@ -113,7 +113,7 @@ opacity:1;
 
 div.serv{
 background-color: #f2f2f2;
-height: 495px;
+height: 494px;
 border-bottom:6px solid #ffffff;
 }
 div.containerserv{
@@ -211,7 +211,7 @@ float: left;
 div.gal{
     background-color: #2d303a;
     background-size: cover;
-    height: 862.5px;
+    height: 870px;
   border-bottom:6px solid #323746;
 
 }
@@ -232,7 +232,7 @@ div.head{
 }
 div.head h1{
     padding-top: 68px;
-    padding-left: 40px;
+    padding-left: 22px;
     padding-bottom: 22px;
     font-size: 30px;
     max-width: 90px;
@@ -245,7 +245,7 @@ letter-spacing:0.6px;
 }
 div.head p{
     width: 940px;
-    padding-left: 40px;
+    padding-left: 22px;
 padding-top: 6px;
 padding-bottom: 17px;
 font-size: 18px;
@@ -259,7 +259,7 @@ letter-spacing:0px;
 }
 
 div.choise{  
-    padding-left: 40px;
+    padding-left: 22px; 
     display: flex;
     width: 290px;
     justify-content: space-between;
@@ -287,18 +287,21 @@ height: 22px;
     color: #dedede;
     border: 1px solid #c5c5c5;
 }    
-table{
+div.imgs{
+    border-bottom:6px solid  #323746 ;
+    padding-bottom: 47px;
+}
+div.containergal{
+    display: flex;
+    flex-wrap:wrap;
     padding-left: 38px;
+    padding-top: 1px;
+ 
 
 }
-td{
-padding-right: 19px;
-padding-bottom: 14px;
-padding-left: 0px;
-}
-
 div.pic img {
-
+padding-left: 20px;
+padding-bottom: 16px;
     width: 220px;
 height: 187px;
 }
@@ -427,7 +430,7 @@ float: left;
     margin: 0 auto;
     width: 1020px;
     border-bottom: 6px solid #ea676b;
-    padding-bottom: 32px;
+    padding-bottom: 34px;
 }
 .inf{
     padding: 0;
@@ -551,6 +554,11 @@ button{
 .cont_inf{
 padding-left: 3px;
 align-items: left;
+color: #f0d8d9;
+}
+button:hover{
+    color: #666d89;
+    background-color:#f0d8d9 ;
 }
 ul{
     list-style-type: none; 
@@ -585,12 +593,22 @@ footer div{
     height: 76px;
 }
 .copy{
+    font-size: 12px;
+    line-height: 22px;
     padding-left: 42px;
-    padding-right: 694px;
+    padding-right: 702px;
+    color:#53596f;
 }
 footer li{
     list-style-type: none; 
     display: inline-block;
     padding-right: 4px;
     margin-top: 3px;
+}.cont_inf a:link{
+    text-decoration: none;
+    color:#f0d8d9 ;
 }
+a:visited {
+    text-decoration: none;
+    color: rgb(248, 215, 203);
+  }
