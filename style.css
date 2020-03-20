@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
 }
+/*@media(max-width:750px ){
+*{
+flex-direction: column;
+align-items: center;
+
+}
+
+}*/
 header{
     display: flex;
     align-items: center;
@@ -18,6 +26,7 @@ header{
     justify-content: center;
     margin: 0 auto;
     width: 1020px;
+    
 }
 
 div.sin{
@@ -75,28 +84,135 @@ margin-top: 3px;
 margin-left: 2px ;
 } 
 
-div.phone{
+.phone{
 display: flex;
 align-items: center;
 justify-content: center;
-background-color: #f06c64;
+width: 100%;
 height: 594px;
-border-bottom: 5.5px solid #ea676b;   
-}
-div.v_iphone{
-padding-right: 73px;
-padding-bottom: 3px;
-}
-
-div.h_iphone{
-padding-bottom: 4px;
-padding-right: 53px;
+ 
 
 }
-div.chev{
+.carousel{
+    position:  relative;
+    display: inline;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    align-items: center;
+    
+    text-align:center;
+    transform:  translate(-50%,-50%);
+}
+.item_container{
+    position: relative;
+    width:100%;
+    overflow: hidden;
+}
+.item{
+display: none;
+position: relative;
+margin: 0 auto;
+}
+.active,
+.next{
+
+    display: block;
+    }
+
+.next{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}  
+.container_slider1{
+    padding-top: 0;
+    padding-left: 3.8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 594px;
+    background-color: #f06c64;
+    border-bottom: 5.5px solid #ea676b;  
+}
+.container_slider2{
+    padding-top: 0;
+    padding-left: 3.8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #648bf0;
+    height: 594px;
+    border-bottom: 5.5px solid #4333cf;  
+    
+}
+.control{
+    display: inline-block;
+    position: absolute;
+top:0;
+bottom:0;
+width: 15%;
+}
+.arrow{
+    position: absolute;
+    top:45.5%;
+    display: inline-block;
+    
+}
+.control.left{
+ left:0;
+ right:auto;
+ padding-left: 12%;
+}
+.control.right{
+    
+    left:auto;
+    right:0;
+    padding-right: 13%;
+
+   }
+.to-left{
+    animation-duration: 2s;
+animation-name: left;
+}
+.to-right{
+    animation-duration: 2s;
+    animation-name: right;
+    animation-direction:reverse ;
+}
+.from-left{
+    animation-duration: 2s;
+    animation-name: left;
+    animation-direction:reverse ;
+}
+.from-right{animation-duration: 2s;
+    animation-name: right;
+    
+}
+@keyframes left{
+    from{
+        left:0;
+    }
+    to{
+        left:-100%;
+    }
+}
+@keyframes right{
+    from{
+        left:100%;
+    }
+    to{
+        left:0;
+    }
+}
+.tr_iphone{
+    padding-top: 20px;
+}
+.chev{
 opacity:0.222;
-padding-right: 54px;
-padding-bottom: 4px;
+
     
 
 }
@@ -105,11 +221,42 @@ opacity:1;
 }
 div.chev_right{
 opacity:0.222;
-padding-bottom: 4px;
+
 }  
 div.chev_right:hover{
 opacity:1;
 } 
+
+.shadow_V {
+    height: 335px;
+    width: 190px;
+    position: absolute;
+    background: black;
+    left: 27.5%;
+    top:19.5%;
+    transition: .4s;
+}
+.shadow_H {
+    width: 333px;
+    height: 191px;
+    position: absolute;
+    background: black;
+    left: 47.7%;
+    top:30.9%;
+    transition: .4s;
+}
+
+.IH {
+    cursor: pointer;
+    padding-bottom: 125px;
+}
+
+.IV {
+    cursor: pointer;
+}
+
+
+
 
 div.serv{
 background-color: #f2f2f2;
