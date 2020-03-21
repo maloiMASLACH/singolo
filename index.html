@@ -147,53 +147,43 @@ ligua, eget lacinia odio sem nec elit. Fusce dapibus,
         </div>
     </div>
     <div class="containergal">
-        <div class="choise">
-               <a class="galarymenu">All</a>            
-               <a class="galarymenu">Web Design</a>   
-               <a class="galarymenu">Graphic Design</a> 
-               <a class="galarymenu">Artwork</a>           
+        <div class="choise portfolio_nav" id="portf">
+            <nav>   <a href="##"class="galarymenu active_nav" id="all">     All             </a>     </nav>         
+            <nav>   <a href="##"class="galarymenu"            id="wd">      Web Design      </a>     </nav> 
+            <nav>   <a href="##"class="galarymenu"            id="graph">   Graphic Design  </a>     </nav>
+            <nav>   <a href="##"class="galarymenu"            id="art">     Artwork         </a>     </nav>       
          </div>
     </div>
 
-<div class="imgs" id="imgs">
-    <div class="containergal">
-        <div class="pic">
-            <a href=""><img src="assets/Sheep.png"></a> 
-        </div>
-        <div class="pic"> 
+<div class="imgs" >
+    <div class="containergal" id="imgs">
+     
+            <img src="assets/Sheep.png">
+        
             <img src="assets/Blue_girl.png"> 
-         </div>
-         <div class="pic"> 
+        
             <img src="assets/BnW.png">
-          </div>
-        <div class="pic">
-            <a href=""><img src="assets/Mr_robot.png"></a>
-        </div>
-        <div class="pic">
-            <a href=""><img src="assets/Rabits.png"></a>
-        </div> 
-        <div class="pic">
-            <a href=""><img src="assets/Bulding.png"></a>
-        </div>
-        <div class="pic">
-            <a href=""><img src="assets/B_R_n_W.png"></a>
-        </div>
-        <div class="pic">
-            <a href=""><img src="assets/Chiken.png"></a>
-        </div>
-        <div class="pic">
-            <a href=""><img src="assets/Sityhead.png"></a>
-        </div> 
-        <div class="pic">
-            <a href=""><img src="assets/Letter.png"></a>
-         </div>
-         <div class="pic">
-            <a href=""><img src="assets/Scary_pic.png"></a>
-         </div>
-         <div class="pic">
-            <a href=""><img src="assets/Broken_glass.png"></a>
-        </div>    
+         
+            <img src="assets/Mr_robot.png">
+       
+            <img src="assets/Rabits.png">
+        
+            <img src="assets/Bulding.png">
+     
+            <img src="assets/B_R_n_W.png">
+       
+            <img src="assets/Chiken.png">
+     
+            <img src="assets/Sityhead.png">
+       
+            <img src="assets/Letter.png">
+     
+            <img src="assets/Scary_pic.png">
+        
+            <img src="assets/Broken_glass.png">
+         
     </div>
+</div>
 </div>
 <div class="us">
     <div class="containerus">
@@ -267,15 +257,23 @@ ligua, eget lacinia odio sem nec elit. Fusce dapibus,
  <div class="container_quote2">
  
      <div class="container_form">
-         <form action="index.html" method="post">
+         <form method="post" id="form">
               <uL class="forma"> 
-                 <li class="liform"> <input type="text" name="name" placeholder="Name (Required)" required></li> 
+                 <li class="liform"> <input type="text" id="name"name="name" placeholder="Name (Required)" required></li> 
                  <li class="liform"> <input type="email"name="email"placeholder="Email (Required)" required></li> 
-                 <li class="liform"> <input type="text"name="subject" placeholder="Subject"></li> 
-                 <li class="liform"> <textarea  type="text"name="describe"placeholder="Describe your project in detail..." ></textarea></li> 
+                 <li class="liform"> <input type="text"id="subject"name="subject" placeholder="Subject"></li> 
+                 <li class="liform"> <textarea  type="text"id="describe"name="describe"placeholder="Describe your project in detail..." ></textarea></li> 
                  
              </uL>
-             <button type="submit" form="form" value="Submit">Submit</button>
+             <button type="submit"id="btn" form="form" value="submit">Submit</button>
+             <div id="message-block" class="hidden">
+                <div id="message">
+                    <p>Masage delivered</p>
+                    <p><span id="result"></span></p>
+                    <p><span id="result1"></span></p>
+                    <button class="close_btn" type="button" id="close-btn">OK</button>
+                </div>
+            </div>
          </form>
      </div>
  
@@ -304,7 +302,7 @@ ligua, eget lacinia odio sem nec elit. Fusce dapibus,
 
 <footer>
     <div>
-   <p class="copy">�Copyright 2013</p>
+   <p class="copy">©Copyright 2013</p>
    <ul>
  <li><img src="assets/Facebook.png"></li>
  <li><img src="assets/Google.png"></li>
