@@ -1,3 +1,27 @@
+const MENU = document.getElementById('home');
+    MENU.addEventListener('click', (event) => {
+       
+        
+        MENU.querySelectorAll('nav>a').forEach(el => el.classList.remove('active_a'));
+        event.target.classList.add('active_a');
+    });
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---------slider-------------*/
 let items = document.querySelectorAll('.item');
 let currentItem = 0;
@@ -56,3 +80,6 @@ vertic.addEventListener('click', () => {
     else
         shadow_V.style.display = "none";
 });
+
+
+
