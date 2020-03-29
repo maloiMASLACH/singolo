@@ -185,3 +185,56 @@ CLOSE_BUTTON.addEventListener('click', () => {
     document.getElementById('result').innerText = '';
     document.getElementById('message-block').classList.add('hidden');
 });
+
+
+
+
+
+
+
+
+
+const menuBar = document.getElementsByClassName("menuBar")[0];
+    const miniMenu = document.getElementsByClassName("miniMenu")[0];
+    const iconMini = document.getElementsByClassName("sin")[0];
+    const shadow = document.getElementsByClassName('shadow')[0];
+    menuBar.addEventListener('click', event => {
+        if (miniMenu.style.transform == "translateX(0%)") {
+            iconMini.classList.remove("iconMini");
+            miniMenu.style.transform = "translateX(-100%)";
+            menuBar.classList.remove("menuBarOpen");
+            shadow.style.display = "none";
+
+        } else {
+            iconMini.classList.add("iconMini");
+            miniMenu.style.transform = "translateX(0%)";
+            menuBar.classList.add("menuBarOpen");
+            shadow.style.display = "block";
+        }
+
+    });
+
+    const miniLink = document.querySelectorAll('#miniLink nav a');
+
+
+
+    miniLink.forEach((el) => {
+        el.addEventListener('click', (event) => {
+            miniLink.forEach(el => el.classList.remove('active_a'));
+            event.target.classList.add('active_a');
+
+            iconMini.classList.remove("iconMini");
+            miniMenu.style.transform = "translateX(-100%)";
+            menuBar.classList.remove("menuBarOpen");
+            shadow.style.display = "none";
+            
+        });
+    });
+
+    shadow.addEventListener('click', event => {
+        iconMini.classList.remove("iconMini");
+        miniMenu.style.transform = "translateX(-100%)";
+        menuBar.classList.remove("menuBarOpen");
+        shadow.style.display = "none";
+
+    });
