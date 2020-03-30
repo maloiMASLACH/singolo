@@ -228,7 +228,7 @@ padding-left: 175px;
 }
 .containerserv{  
     
-     
+    margin-left: -10px  !important;   
     width: 320px !important;
 }
 .servhead{
@@ -253,12 +253,13 @@ div.info ul p{
     height: 1100px!important;
 }
 .containergal {
-    width: 320px !important;
+    width: 350px !important;
     padding: 0 auto ;
     margin: 0 auto !important;   
+    margin-left: -30px  !important;   
 }
 div.head p{
-    width: 320px !important;
+    width: 290px !important;
 
 }
 #imgs {
@@ -266,12 +267,13 @@ div.head p{
     padding-top: 27px;
     height: 1020px !important;
     width: 320px;
-            
+    margin-left: -40px  !important;  
     display: grid;
     grid-template-columns: 151px 151px ;
     grid-template-rows: 128px 128px 128px 128px 128px 128px ;
     grid-gap: 9px;
     overflow: hidden;
+    
 }
 .imgs img {
     width: 151px !important;
@@ -285,9 +287,10 @@ div.head p{
 div.containerus {
     width: 320px !important; 
     margin: 0 auto !important;   
+    margin-left: -10px  !important;  
 }
 div.ushead p {
-    width: 320px !important; 
+    width: 270px !important; 
 }
         
         
@@ -319,7 +322,7 @@ div .container_quote{
 }
 .getqoute{
     margin-left: -8%  !important; 
-    width:320px !important;
+    width:300px !important;
     margin-bottom: -47% !important;
    
 }
@@ -346,12 +349,12 @@ div .container_quote2{
     margin-bottom: -10px;
 }
 textarea {
-    width: 290px !important;
+    width: 270px !important;
     margin-left: -25px !important;   
 }
 form input {
     margin-left: -25px !important;   
-    width: 290px;
+    width: 270px;
 }
 .footer div.foot {
     width: 320px !important;          
@@ -369,7 +372,7 @@ form input {
 }
 #btn
 {  margin-left: -25px !important;   
-    width: 310px !important;
+    width: 290px !important;
 }
 
 .cr{
